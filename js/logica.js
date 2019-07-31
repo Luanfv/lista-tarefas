@@ -2,8 +2,8 @@ var elementInput = document.querySelector("#menu #add #input")
 var elementButton = document.querySelector("#menu #add #button")
 var containerPendent = document.querySelector("#principal .titulo_tarefas .principal_tarefas")
 var containerResolved = document.querySelector("#principal .titulo_tarefas .principal_resolvidas")
-var tasksList = []
-var resolvedList = []
+var tasksList = JSON.parse(localStorage.getItem("lista_tarefas")) || []
+var resolvedList = JSON.parse(localStorage.getItem("lista_resolvidos")) || []
 
 viewTasks()
 elementButton.onclick = createTask
@@ -16,6 +16,7 @@ function createTask(){
     tasksList.push(elementInput.value)
     elementInput.value = ''
     viewTasks()
+    saved()
 }
 
 function viewTasks(){
@@ -92,11 +93,18 @@ function viewTasks(){
 function resolvedTask(posicao){
     resolvedList.push(tasksList[posicao])
     tasksList.splice(posicao, 1)
+    saved()
     viewTasks()
 }
 
 //Função ativa quando clicar em excluir
 function removeTask(posicao){
     tasksList.splice(posicao, 1)
+    saved()
     viewTasks()
+}
+
+function saved(){
+    localStorage.setItem("lista_tarefas", JSON.stringify(tasksList))
+    localStorage.setItem("lista_resolvidos", JSON.stringify(resolvedList))
 }

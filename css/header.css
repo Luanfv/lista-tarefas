@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#menu{
+    background-color: #7401DF;
+}
+
+#titulos{
+    padding: 5%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#titulo_principal{
+    font-size: 2.2em;
+    margin: 1%;
+}
+
+#titulo_secundario{
+    font-size: 1.5em;
+}
+
+#add{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#input{
+    width: 500px;
+    height: 50px;
+    font-size: 1.5em;
+}
+
+#button{
+    font-size: 1.5em;
+    height: 50px;
+    color: #7401DF;
+}

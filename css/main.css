@@ -1,0 +1,23 @@
+.escapamento50px{
+    height: 50px;
+}
+
+#principal{
+    margin: auto;
+    width: 80%;
+}
+
+.titulo_tarefas{
+    text-align: center;
+    font-size: 1.5em;
+    color: #7401DF
+}
+
+.tarefas{
+    color: black;
+    text-align: left;
+}
+
+li{
+    list-style-type: none;
+}

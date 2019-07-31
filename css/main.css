@@ -7,17 +7,51 @@
     width: 80%;
 }
 
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
 .titulo_tarefas{
+    font-weight: 800;
     text-align: center;
-    font-size: 1.5em;
-    color: #7401DF
+    font-size: 2em;
+    color: #7401DF;
+    margin-bottom: 50px;
+}
+
+.principal_tarefas{
+    font-weight: 550;
+    color: black;
+    padding: 10px;
 }
 
 .tarefas{
     color: black;
     text-align: left;
+    background-color: #D8D8D8;
+    padding: 15px;
+    margin: 15px 5px;
+    border-radius: 5%;
 }
 
-li{
-    list-style-type: none;
+.tarefa{
+    padding-bottom: 15px;
+}
+
+.function{
+    float: right;
+}
+
+.excluir{  
+    padding: 5px;
+    background-color: crimson;
+    border-radius: 8%;
+    margin-left: 5px;
+}
+
+.resolvido{
+    padding: 5px;
+    background-color: #7401DF;
+    border-radius: 8%;
 }
